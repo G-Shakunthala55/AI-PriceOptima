@@ -1,0 +1,51 @@
+2025-10-12 14:47:56,327 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:47:56,328 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:48:02,348 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:48:02,349 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:48:07,597 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:48:07,598 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:49:43,364 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:49:43,365 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:52:07,411 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:52:07,411 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:52:12,999 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:52:13,000 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:52:13,898 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:52:13,898 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:52:15,008 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:52:15,009 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:53:53,683 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 14:53:53,683 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 14:55:01,023 - INFO - Request from 127.0.0.1 - Recommended price: 1076.6617926422823
+2025-10-12 19:15:16,128 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-12 19:15:16,129 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-12 19:18:51,592 - WARNING - Invalid category string for Time_of_Booking
+2025-10-12 19:21:12,913 - WARNING - Invalid category Sedan for Vehicle_Type
+2025-10-12 19:23:00,181 - WARNING - Invalid category SUV for Vehicle_Type
+2025-10-13 05:07:27,469 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-13 05:07:27,470 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-13 05:10:59,744 - INFO - Request from 127.0.0.1 - Recommended price: 1506.6617926422823
+2025-10-13 05:18:42,608 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-13 05:18:42,608 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-13 05:19:20,424 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-13 05:19:20,425 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-13 05:20:33,401 - INFO - Request from 127.0.0.1 - Recommended: 1075.0005691728334
+2025-10-13 09:03:38,220 - INFO - \u2705 Model loaded successfully from optimized_gradient_boost_model.pkl
+2025-10-13 09:03:38,221 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'numeric_scaler.pkl'
+2025-10-13 09:31:02,940 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 09:31:02,940 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 09:31:07,676 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 09:31:07,676 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 09:31:15,521 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 09:31:15,521 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 09:32:06,369 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 09:32:06,369 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 09:38:46,673 - INFO - Request from 127.0.0.1 - Recommended: 1052.4682554631613
+2025-10-13 09:49:07,451 - INFO - Request from 127.0.0.1 - Recommended: 1166.18534362937
+2025-10-13 09:58:34,446 - INFO - Request from 127.0.0.1 - Recommended: 1407.031494450879
+2025-10-13 10:18:10,917 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 10:18:10,918 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 10:24:48,608 - INFO - Request from 127.0.0.1 - Recommended: 1349.9373750334319
+2025-10-13 17:50:22,176 - INFO - \u2705 Model loaded successfully from D:\PriceOptima\backend\optimized_gradient_boost_model.pkl
+2025-10-13 17:50:22,178 - WARNING - No scaler loaded, numeric features won't be scaled: [Errno 2] No such file or directory: 'D:\\PriceOptima\\backend\\numeric_scaler.pkl'
+2025-10-13 17:53:27,464 - INFO - Request from 127.0.0.1 - Recommended: 1350.679356037934
