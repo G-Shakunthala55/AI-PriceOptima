@@ -6,21 +6,14 @@ import joblib
 import traceback
 import logging
 import os
-
-# ==========================================================
 # LOGGING SETUP
-# ==========================================================
 logging.basicConfig(
     filename="app.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
-
-# ==========================================================
 # FASTAPI APP INITIALIZATION
-# ==========================================================
 app = FastAPI(title="Dynamic Pricing API", version="1.0")
-
 # Enable CORS for all origins (frontend)
 app.add_middleware(
     CORSMiddleware,
@@ -29,30 +22,22 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-# ==========================================================
 # MODEL LOADING
-# ==========================================================
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "optimized_gradient_boost_model.pkl")
 SCALER_PATH = os.path.join(os.path.dirname(__file__), "numeric_scaler.pkl")
-
 try:
     model = joblib.load(MODEL_PATH)
-    logging.info(f"✅ Model loaded successfully from {MODEL_PATH}")
+    logging.info(f" Model loaded successfully from {MODEL_PATH}")
 except Exception as e:
     model = None
-    logging.error(f"⚠️ Failed to load model: {e}")
-
+    logging.error(f" Failed to load model: {e}")
 try:
     scaler = joblib.load(SCALER_PATH)
-    logging.info(f"✅ Scaler loaded successfully from {SCALER_PATH}")
+    logging.info(f" Scaler loaded successfully from {SCALER_PATH}")
 except Exception as e:
     scaler = None
     logging.warning(f"No scaler loaded, numeric features won't be scaled: {e}")
-
-# ==========================================================
 # INPUT SCHEMA (VALIDATION)
-# ==========================================================
 class Record(BaseModel):
     Number_of_Riders: float
     Number_of_Drivers: float
@@ -73,20 +58,14 @@ class Record(BaseModel):
         if v < 0:
             raise ValueError(f"{info.field_name} must be non-negative")
         return v
-
-# ==========================================================
 # CATEGORY DEFINITIONS
-# ==========================================================
 CATEGORIES = {
     "Time_of_Booking": ["Morning", "Afternoon", "Evening", "Night"],
     "Customer_Loyalty_Status": ["Gold", "Silver", "Regular"],
     "Location_Category": ["Urban", "Suburban", "Rural"],
     "Vehicle_Type": ["Economy", "Premium"],
 }
-
-# ==========================================================
 # ROUTES
-# ==========================================================
 @app.get("/health")
 def health_check():
     """Check if model is loaded."""
@@ -128,21 +107,17 @@ def recommend(record: Record, request: Request):
 
         # Predict normalized price
         predicted_norm = model.predict(input_df)[0]
-
         # Compute recommended price
         base_price = record.competitor_price
         hist_cost = record.Expected_Ride_Duration
         price_recommended = (base_price + hist_cost) / 2 + (predicted_norm * 10)
-
         logging.info(f"Request from {request.client.host} - Recommended: {price_recommended}")
-
         return {
             "price_recommended": round(price_recommended, 2),
             "predicted_normalized": float(round(predicted_norm, 4)),
             "bounds": {"low": round(base_price * 0.9, 2), "high": round(base_price * 1.1, 2)},
             "categories": CATEGORIES,
         }
-
     except Exception as e:
         logging.error(f"Prediction failed: {e}\n{traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=f"Prediction failed: {e}")
